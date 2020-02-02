@@ -24,3 +24,5 @@ Temperature-Check-Application
 
 - /avgtempinsfax : to provide avg temperature of sfax.
 -- https://bc906j0snk.execute-api.us-east-1.amazonaws.com/dev/avgtempinsfax
+
+aws resouces and mongodb data images available at folder location : temperaturecheck/images
