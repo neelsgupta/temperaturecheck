@@ -1,29 +1,26 @@
-#Temperature-Check-Application
-
-Installation
+Temperature-Check-Application
 ============
 
-### Prerequisites
+# Prerequisites
 
- - nodejs 10.x or higher
+- nodejs 10.x or higher
 
-### Build
+# Build
 
 - Build it and install all dependencies by running the following command `npm init -y`
-   
-### Getting Started
-## Run locally
+  
+# Run locally
 - To run it locally please use below command `npm i --save-dev serverless-offline`:
 - locally application runs on url : *http://localhost:3000/*
 
-## Run on AWS cloud (using api-gateway & lambda)
-- set AWS_ACCESS_KEY_ID=<your-key-here>
-- set AWS_SECRET_ACCESS_KEY=<your-secret-key-here>
+# Run on AWS cloud (using api-gateway & lambda)
+- set AWS_ACCESS_KEY_ID=your-key-here
+- set AWS_SECRET_ACCESS_KEY=your-secret-key-here
 - deploy it using below command to aws: `sls deploy`
 
-### Access the application using below url:
+# Access the application using below url:
 - /currenttempincovilha : to provide current temperature in Covilha, Portugal with current date and time.
-url : https://bc906j0snk.execute-api.us-east-1.amazonaws.com/dev/currenttempincovilha
+-- https://bc906j0snk.execute-api.us-east-1.amazonaws.com/dev/currenttempincovilha
 
 - /avgtempinsfax : to provide avg temperature of sfax.
-url : https://bc906j0snk.execute-api.us-east-1.amazonaws.com/dev/avgtempinsfax
+-- https://bc906j0snk.execute-api.us-east-1.amazonaws.com/dev/avgtempinsfax

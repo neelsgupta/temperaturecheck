@@ -65,6 +65,6 @@ module.exports.avgtempinsfax = (event, context, callback) => {
 };
 
 function calculateavg(sfaxtemperature){	
-	return "16";
+	//TODO logic to calulate the average temperature
+	return JSON.stringify(sfaxtemperature);
 }
-
