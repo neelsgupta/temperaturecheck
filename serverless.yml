@@ -1,0 +1,25 @@
+service: rest-api
+provider:
+ name: aws
+ runtime: nodejs10.x # set node.js runtime
+ memorySize: 128 # set the maximum memory of the Lambdas in Megabytes
+ timeout: 10 # the timeout is 10 seconds (default is 6 seconds)
+ stage: dev # setting the env stage to dev, this will be visible in the routes
+ region: us-east-1
+functions:
+ currenttempincovilha:
+   handler: handler.currenttempincovilha # path will be domain.name.com/dev/notes
+   events:
+    - http:
+        path: currenttempincovilha
+        method: get
+        cors: true
+ avgtempinsfax:
+   handler: handler.avgtempinsfax # path will be domain.name.com/dev/notes
+   events:
+    - http:
+        path: avgtempinsfax
+        method: get
+        cors: true
+plugins:
+- serverless-offline # adding the plugin to be able to run the offline emulation  
